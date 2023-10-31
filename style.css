@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,800;0,6..96,900;1,6..96,800&family=Dancing+Script:wght@400;600;700&family=Lobster&family=Nosifer&family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b061a;
+}
+
+.spider {
+    position: absolute;
+    top: 0;
+    animation: animatespider 15s ease-in-out infinite;
+}
+
+@keyframes animatespider {
+
+    0%,
+    100% {
+        transform: translateY(-400px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+.pumpkin01 {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    animation: animatepumpkin 8s ease-in-out infinite;
+}
+
+@keyframes animatepumpkin {
+
+    0%,
+    100% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+.pumpkin02 {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    animation: animatepumpkin 4s ease-in-out infinite;
+    scale: 0.8;
+}
+
+.spiderweb {
+    position: absolute;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    mix-blend-mode: screen;
+}
+
+.text {
+    position: relative;
+    color: #696767;
+    font-size: 60px;
+    font-weight: 100;
+    font-family: 'Nosifer', sans-seri;
+    animation: animatetext 5s linear infinite;
+}
+
+@keyframes animatetext {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    10%,
+    92% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: none;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        /* transform: translateY(50px); */
+        color: #ffac09;
+        text-shadow: 0 0 10px #ffac09,
+            0 0 20px #ffac09,
+            0 0 40px #ffac09,
+            0 0 80px #ffac09,
+            0 0 160px #ffac09;
+    }
+}
